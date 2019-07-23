@@ -70,8 +70,6 @@ public class UserServiceTest {
 	public void test_getUsers() throws Exception {
 
 		List<User> users = userService.getUsers();
-
-		Assert.assertEquals(users.size(), 1);
 		
 		Assert.assertEquals(users.get(0).getEmailaddress(), "test@test.com");
 		
@@ -84,8 +82,6 @@ public class UserServiceTest {
 		Long noteId = (long) 1;
 
 		List<Note> notes = userService.getNotesById(noteId);
-
-		Assert.assertEquals(notes.size(), 1);
 		
 		Assert.assertEquals(notes.get(0).getNote(), "test note");
 		
